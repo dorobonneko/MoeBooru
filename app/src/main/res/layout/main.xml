@@ -1,13 +1,12 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    >
+    android:id="@+id/drawer">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+   <include
+	   layout="@layout/content"/>
+   <include
+	   layout="@layout/navigation"
+	   />
 
-</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

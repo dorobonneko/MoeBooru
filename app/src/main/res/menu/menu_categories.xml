@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/checkTextStyle">
+    <item
+        android:id="@+id/account"
+        android:title="@string/account"
+		android:icon="@drawable/account"/>
+	<item
+		android:id="@+id/posts"
+		android:title="@string/posts"
+		android:icon="@drawable/image"/>
+    <item
+		android:id="@+id/pools"
+		android:title="@string/pools"
+		android:icon="@drawable/pool"/>
+    <item
+		android:id="@+id/tags"
+		android:title="@string/tags"
+		android:icon="@drawable/tag"/>
+    <item
+		android:id="@+id/artists"
+		android:title="@string/artists"
+		android:icon="@drawable/account_multiple"/>
+    
+</menu>

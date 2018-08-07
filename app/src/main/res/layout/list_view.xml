@@ -1,0 +1,16 @@
+<android.support.v4.widget.SwipeRefreshLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/refresh">
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	>
+		<android.support.v7.widget.RecyclerView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		/>
+	</android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+	

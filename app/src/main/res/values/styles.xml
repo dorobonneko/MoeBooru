@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+  <style name="AppTheme" parent="@android:style/Theme.Material">
+	  	<item name="android:colorPrimary">@null</item>
+		<item name="android:colorPrimaryDark">@null</item>
+	  <item name="android:windowNoTitle">true</item>
+	  <item name="android:windowActionBar">false</item>
+	  <item name="android:windowTranslucentStatus">false</item>
+	  <item name="android:windowTranslucentNavigation">true</item>
+	  <item name="android:colorAccent">#FF4081</item> 
+	  <item name="android:windowFrame">@null</item>
+	  <item name="android:windowBackground">@android:color/transparent</item>
+	  <item name="android:statusBarColor">@android:color/transparent</item>
+	  <item name="android:colorControlNormal">#ffffff</item>
+	  <item name="android:colorControlActivated">#bbbbbb</item>
+	  <item name="android:colorControlHighlight">#50bbbbbb</item>
+		<!--	按钮颜色<item name="android:colorButtonNormal">#ff009688</item>
+		-->
+		</style>
+	<style name="checkTextStyle" parent="AppTheme">
+		<item name="android:colorControlNormal">#555</item>
+		<item name="android:colorControlActivated">#000</item>
+		<item name="android:colorControlHighlight">#50D1C4E9</item>
 	</style>
 </resources>

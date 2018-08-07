@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="account">Account</string>
+    <string name="posts">Posts</string>
+    <string name="pools">Pools</string>
+    <string name="tags">Tags</string>
+    <string name="artists">Artists</string>
+	<string name="exit_msg">press once again to exit</string>
 
     <string name="app_name">MoeBooru</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="drawer_open">drawerlayout is opened</string>
+	<string name="drawer_close">drawerlayout is closed</string>
 </resources>
