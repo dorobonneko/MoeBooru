@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:padding="4dp">
+
+	<ImageView
+		android:background="@drawable/ripple_circle"
+		android:id="@+id/close"
+		android:layout_alignParentEnd="true"
+		android:src="@drawable/close"
+		android:layout_width="54dp"
+		android:layout_height="54dp"
+		android:scaleType="centerInside"/>
+
+	<com.moe.booru.widget.TextInput
+		android:layout_below="@id/close"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/name"
+		app:hint="Name"/>
+
+	<LinearLayout
+		android:layout_below="@id/name"
+		android:id="@+id/space"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
+
+		<Spinner
+			android:entries="@array/scheme"
+			android:entryValues="@array/scheme"
+			android:layout_below="@id/name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/scheme"/>
+
+		<com.moe.booru.widget.TextInput
+			android:layout_below="@id/name"
+			android:layout_toEndOf="@id/scheme"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/host"
+			app:hint="Host"
+			app:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.0123456789-_:"/>
+
+	</LinearLayout>
+
+	<com.moe.booru.widget.TextInput
+		android:layout_below="@id/space"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/passwd_hash"
+		app:hint="Password-Hash-Salt"/>
+
+	<TextView
+		android:gravity="center"
+		android:text="Add"
+		android:layout_alignParentEnd="true"
+		android:layout_below="@id/passwd_hash"
+		android:layout_width="wrap_content"
+		android:padding="16dp"
+		android:textSize="16sp"
+		android:layout_height="54dp"
+		android:id="@+id/addon"
+		android:clipToPadding="false"
+		android:background="@drawable/ripple_round"/>
+
+	<Spinner
+		android:layout_alignBaseline="@id/addon"
+		android:entries="@array/booru"
+		android:entryValues="@array/values"
+		android:layout_below="@id/passwd_hash"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/booru"/>
+</RelativeLayout>
+

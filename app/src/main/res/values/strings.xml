@@ -6,9 +6,11 @@
     <string name="tags">Tags</string>
     <string name="artists">Artists</string>
 	<string name="exit_msg">press once again to exit</string>
-
-    <string name="app_name">MoeBooru</string>
+	<string name="logout">登出</string>
+    <string name="app_name">Booru系</string>
     <string name="hello_world">Hello world!</string>
 	<string name="drawer_open">drawerlayout is opened</string>
 	<string name="drawer_close">drawerlayout is closed</string>
+	<string name="redo">重试</string>
+	<string name="account_not_found">账户不存在</string>
 </resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_gravity="bottom|end"
+	android:layout_margin="16dp"
+	android:id="@+id/float_button_view">
+
+	<com.moe.booru.widget.CircleImageView
+		android:layout_gravity="bottom|end"
+		android:src="@drawable/account"
+		android:id="@+id/account"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:layout_width="@dimen/float_button_size"
+		android:layout_height="@dimen/float_button_size"
+		android:layout_marginEnd="@dimen/float_button_margin_end"
+		android:layout_marginBottom="@dimen/float_button_margin_bottom"/>
+
+	<com.moe.booru.widget.CircleImageView
+		android:layout_gravity="bottom|end"
+		android:layout_marginBottom="@dimen/float_button_margin_bottom"
+		android:id="@+id/posts"
+		android:src="@drawable/image"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:layout_width="@dimen/float_button_size"
+		android:layout_height="@dimen/float_button_size"
+		android:layout_marginEnd="@dimen/float_button_margin_end"/>
+
+	<com.moe.booru.widget.CircleImageView
+		android:layout_gravity="bottom|end"
+		android:layout_marginBottom="@dimen/float_button_margin_bottom"
+		android:id="@+id/pools"
+		android:src="@drawable/pool"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:layout_width="@dimen/float_button_size"
+		android:layout_height="@dimen/float_button_size"
+		android:layout_marginEnd="@dimen/float_button_margin_end"/>
+
+	<com.moe.booru.widget.CircleImageView
+		android:layout_gravity="bottom|end"
+		android:layout_marginBottom="@dimen/float_button_margin_bottom"
+		android:id="@+id/tags"
+		android:src="@drawable/tag"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:layout_width="@dimen/float_button_size"
+		android:layout_height="@dimen/float_button_size"
+		android:layout_marginEnd="@dimen/float_button_margin_end"/>
+
+	<com.moe.booru.widget.CircleImageView
+		android:layout_gravity="bottom|end"
+		android:layout_marginBottom="@dimen/float_button_margin_bottom"
+		android:id="@+id/artists"
+		android:src="@drawable/account_multiple"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:layout_width="@dimen/float_button_size"
+		android:layout_height="@dimen/float_button_size"
+		android:layout_marginEnd="@dimen/float_button_margin_end"/>
+
+	<com.moe.booru.widget.CircleImageView
+		android:layout_gravity="bottom|end"
+		
+		android:id="@+id/current"
+		android:background="?android:attr/selectableItemBackgroundBorderless"
+		android:layout_width="54dp"
+		android:layout_height="54dp"
+		android:elevation="5dp"
+		/>
+
+</FrameLayout>
+

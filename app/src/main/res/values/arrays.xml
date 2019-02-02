@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<string-array name="scheme">
+			<item>https://</item>
+			<item>http://</item>
+		</string-array>
+		<string-array name="booru">
+			<item>MoeBooru</item>
+			<item>GelBooru</item>
+			<item>DanBooru1.x</item>
+			<item>DanBooru2.x</item>
+		</string-array>
+		<string-array name="values">
+			<item>0</item>
+			<item>1</item>
+			<item>2</item>
+			<item>3</item>
+		</string-array>
+		<string-array name="rating">
+			<item>none</item>
+			<item>safe</item>
+			<item>questionable</item>
+			<item>explicit</item>
+		</string-array>
+		<string-array name="order">
+			<item>id_desc</item>
+			<item>id</item>
+			<item>fav</item>
+			<item>favcount</item>
+			<item>wide</item>
+			<item>nonwide</item>
+			<item>score</item>
+			<item>score_asc</item>
+			<item>mpixels</item>
+			<item>mpixels_asc</item>
+			<item>landscape</item>
+			<item>portrait</item>
+			<item>vote</item>
+		</string-array>
+		<string-array name="definition">
+			<item>Sample</item>
+			<item>Large</item>
+			<item>Origin</item>
+			<!--<item>source</item>-->
+		</string-array>
+	</resources>

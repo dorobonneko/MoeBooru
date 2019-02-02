@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#000">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="?android:attr/actionBarSize">
+
+		<ImageView
+			android:id="@+id/search"
+			android:layout_width="?android:attr/actionBarSize"
+			android:layout_height="?android:attr/actionBarSize"
+			android:src="@drawable/magnify"
+			android:layout_alignParentEnd="true"
+			android:background="@drawable/ripple_circle"
+			android:scaleType="centerInside"/>
+
+		<FrameLayout
+			android:orientation="horizontal"
+			android:layout_toStartOf="@id/search"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true">
+
+			<EditText
+				android:layout_marginStart="8dp"
+				android:singleLine="true"
+				android:layout_gravity="end|center_vertical"
+				android:id="@+id/text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingEnd="24dp"/>
+
+			<ImageView
+				android:visibility="gone"
+				android:layout_gravity="end|center_vertical"
+				android:tint="#fff"
+				android:id="@+id/clear"
+				android:src="@drawable/close"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:scaleType="centerInside"
+				android:background="@drawable/ripple_circle"/>
+
+		</FrameLayout>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_weight="1"
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Order:"/>
+
+			<Spinner
+				android:id="@+id/order"
+				android:entries="@array/order"
+				android:entryValues="@array/order"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_weight="1"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Rating:"/>
+
+			<Spinner
+				android:id="@+id/rating"
+				android:entries="@array/rating"
+				android:entryValues="@array/rating"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/listview"
+		android:padding="8dp"/>
+</LinearLayout>
+

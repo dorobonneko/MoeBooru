@@ -9,41 +9,45 @@
 
 	<FrameLayout
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:minHeight="200dp"
-		android:background="#D1C4E9">
+		android:layout_height="200dp"
+		android:minHeight="200dp">
 
 		<ImageView
-			android:background="?android:attr/selectableItemBackgroundBorderless"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginStart="16dp"
-			android:layout_marginTop="40dp"
-			android:src="@drawable/settings"/>
-
-		<TextView
-			android:background="?android:attr/selectableItemBackgroundBorderless"
-			android:layout_marginStart="16dp"
-			android:layout_marginEnd="16dp"
-			android:drawableEnd="@drawable/menu_down"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textSize="18sp"
-			android:layout_gravity="bottom"/>
-
-	</FrameLayout>
-
-	<ViewFlipper
-		android:layout_width="match_parent"
-		android:layout_height="match_parent">
-		<com.moe.booru.widget.MenuView
-			android:background="#ffffff"
-			android:id="@+id/menuview"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			app:menu="@menu/menu_categories"
-		/>
-	</ViewFlipper>
+			android:id="@+id/head_background"
+			android:scaleType="centerCrop"
+			/>
+<FrameLayout
+	android:id="@+id/navigation_space"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#30000000"
+	android:clipToPadding="false">
+		<ImageView
+			android:id="@+id/settings"
+			android:background="@drawable/ripple_circle"
+			android:layout_width="54dp"
+			android:layout_height="54dp"
+			android:src="@drawable/settings"
+			android:scaleType="centerInside"/>
 
+		<ImageView
+			android:id="@+id/add"
+			android:background="@drawable/ripple_circle"
+			android:layout_width="54dp"
+			android:layout_height="54dp"
+			android:src="@drawable/plus"
+			android:layout_gravity="bottom|end"
+			android:scaleType="centerInside"/>
+
+	</FrameLayout>
+	</FrameLayout>
+	<android.support.v7.widget.RecyclerView
+		android:background="#fff"
+		android:id="@+id/recyclerview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	/>
 </LinearLayout>
 

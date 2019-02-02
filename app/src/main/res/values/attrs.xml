@@ -3,4 +3,18 @@
 		<declare-styleable name="menu">
 			<attr name="menu" format="reference"/>
 			</declare-styleable>
+		<declare-styleable name="text_input">
+			<attr name="hint" format="reference|string"/>
+			<attr name="hintSize" format="reference|dimension"/>
+			<attr name="hintColor" format="reference|color"/>
+			<attr name="accentColor" format="reference|color"/>
+			<attr name="accentSize" format="reference|dimension"/>
+			<attr name="digits" format="reference|string"/> 
+		</declare-styleable>
+		<declare-styleable name="swipe_layout">
+			<attr name="direction" format="reference|enum">
+				<enum name="left" value="0"/>
+				<enum name="right" value="1"/>
+			</attr>
+		</declare-styleable>
 		</resources>
